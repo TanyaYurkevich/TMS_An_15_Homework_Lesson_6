@@ -11,14 +11,14 @@ public class Students {
     String surname;
     int age;
     String groupNumber;
-    String flor;
+    String gender ;
 
-    public Students(String n, String sn, int a, String gN, String fl) {
+    public Students(String n, String sn, int a, String gN, String g) {
         this.name = n;
         this.surname = sn;
         this.age = a;
         this.groupNumber = gN;
-        this.flor = fl;
+        this.gender = g;
 
     }
 
@@ -29,7 +29,7 @@ public class Students {
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
                 ", groupNumber='" + groupNumber + '\'' +
-                ", flor='" + flor + '\'' +
+                ", flor='" + gender + '\'' +
                 '}';
     }
 
@@ -43,7 +43,7 @@ public class Students {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, surname, age, groupNumber, flor);
+        return Objects.hash(name, surname, age, groupNumber, gender);
     }
 }
 
