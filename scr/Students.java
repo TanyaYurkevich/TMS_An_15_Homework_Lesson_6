@@ -38,7 +38,7 @@ public class Students {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Students students = (Students) o;
-        return age == students.age && Objects.equals(name, students.name) && Objects.equals(surname, students.surname) && Objects.equals(groupNumber, students.groupNumber) && Objects.equals(flor, students.flor);
+        return age == students.age && Objects.equals(name, students.name) && Objects.equals(surname, students.surname) && Objects.equals(groupNumber, students.groupNumber) && Objects.equals(gender, students.gender);
     }
 
     @Override
